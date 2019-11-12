@@ -1,0 +1,19 @@
+@charset 'utf-8';
+
+$animation_time: .1s;
+
+._toast {
+  // @include setAbsolutePosition;
+  transition: opacity $animation_time linear;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, .8);
+  white-space: nowrap;
+  font-size: 30px;
+  color: #fff;
+}
